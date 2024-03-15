@@ -1,0 +1,22 @@
+{
+  "name": "dintero-api-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "customers": "openapi-typescript https://docs.dintero.com/specs/spec-customers.yaml -o ./src/types/dintero-customers-api.d.ts",
+    "discounts": "openapi-typescript https://docs.dintero.com/specs/spec-discounts.yaml -o ./src/types/dintero-discounts-api.d.ts",
+    "products": "openapi-typescript https://docs.dintero.com/specs/spec-products.yaml -o ./src/types/dintero-products-api.d.ts",
+    "webhooks": "openapi-typescript https://docs.dintero.com/specs/spec-webhooks.yaml -o ./src/types/dintero-webhooks-api.d.ts",
+    "receipts": "openapi-typescript https://docs.dintero.com/specs/spec-receipts.yaml -o ./src/types/dintero-receipts-api.d.ts",
+    "wallets": "openapi-typescript https://docs.dintero.com/specs/spec-wallets.yaml -o ./src/types/dintero-wallets-api.d.ts",
+    "checkout": "openapi-typescript https://docs.dintero.com/specs/spec-checkout.yaml -o ./src/types/dintero-checkout-api.d.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openapi-fetch": "^0.9.3",
+    "openapi-typescript": "5"
+  }
+}
